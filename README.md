@@ -4,7 +4,7 @@
 
 ## Usage
 
-```php
+``` php
 require_once 'myna.php';
 
 $response = myna_suggest('your-experiment-id') or print(myna_problem());
