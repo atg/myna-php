@@ -11,7 +11,8 @@ $response = myna_suggest('your-experiment-id') or print(myna_problem());
 $token = $response['token'];
 $variant = $response['variant'];
 
-// ...use variant to choose what to display and put token somewhere so that it can be used when the user performs a positive action.
+// ...use variant to choose what to display and put token somewhere
+// so that it can be used when the user performs a positive action.
 
 // When a positive action occurs...
 

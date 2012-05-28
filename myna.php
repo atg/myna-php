@@ -43,7 +43,7 @@ function myna_reward($experiment_id, $token, $amount=1) {
     
     $url = 'http://api.mynaweb.com/v1/experiment/' . urlencode($experiment_id) . '/reward'
          . '?token=' . urlencode($token)
-         . '?amount=' . urlencode((string)$amount);
+         . '&amount=' . urlencode((string)$amount);
     $contents = file_get_contents($url);
     if (!$contents)
         return FALSE or myna_problem('The server did not respond.');
